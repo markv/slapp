@@ -18,6 +18,8 @@ module.exports = () => {
           team_id: body.team_id
         }
       }
+      
+      res.send({"response_type": "in_channel"})
 
       next()
     }
